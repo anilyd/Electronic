@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Central Hub -->
+  <circle cx="400" cy="300" r="100" fill="#007bff" opacity="0.1"/>
+  <circle cx="400" cy="300" r="80" fill="#007bff" opacity="0.2"/>
+  <circle cx="400" cy="300" r="60" fill="#007bff" opacity="0.3"/>
+  
+  <!-- Benefit Icons -->
+  <!-- Cost Savings -->
+  <g transform="translate(200,150)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <path d="M-15,-15 L15,15 M-15,15 L15,-15" stroke="white" stroke-width="4"/>
+    <text x="0" y="60" text-anchor="middle" fill="#007bff" font-size="14">Cost Savings</text>
+  </g>
+  
+  <!-- Efficiency -->
+  <g transform="translate(600,150)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <path d="M-20,0 L20,0 M0,-20 L0,20" stroke="white" stroke-width="4"/>
+    <text x="0" y="60" text-anchor="middle" fill="#007bff" font-size="14">Efficiency</text>
+  </g>
+  
+  <!-- Security -->
+  <g transform="translate(200,450)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <path d="M0,-20 L-20,0 L0,20 L20,0 Z" fill="white"/>
+    <text x="0" y="60" text-anchor="middle" fill="#007bff" font-size="14">Security</text>
+  </g>
+  
+  <!-- Innovation -->
+  <g transform="translate(600,450)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <path d="M0,-20 Q20,0 0,20 Q-20,0 0,-20" fill="white"/>
+    <text x="0" y="60" text-anchor="middle" fill="#007bff" font-size="14">Innovation</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g stroke="#007bff" stroke-width="2" opacity="0.3">
+    <line x1="240" y1="150" x2="360" y2="250"/>
+    <line x1="560" y1="150" x2="440" y2="250"/>
+    <line x1="240" y1="450" x2="360" y2="350"/>
+    <line x1="560" y1="450" x2="440" y2="350"/>
+  </g>
+  
+  <!-- Animated Pulse Circles -->
+  <circle cx="400" cy="300" r="90" fill="none" stroke="#007bff" opacity="0.2">
+    <animate attributeName="r" values="90;100;90" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Decorative Elements -->
+  <g fill="#007bff" opacity="0.1">
+    <circle cx="100" cy="100" r="20"/>
+    <circle cx="700" cy="500" r="25"/>
+    <circle cx="150" cy="500" r="15"/>
+    <circle cx="650" cy="100" r="18"/>
+  </g>
+  
+  <!-- Abstract Lines -->
+  <g stroke="#007bff" stroke-width="1" opacity="0.1">
+    <path d="M50,300 Q400,250 750,300"/>
+    <path d="M400,50 Q350,300 400,550"/>
+  </g>
+</svg>

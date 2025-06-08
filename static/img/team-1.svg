@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa"/>
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="120" r="70" fill="#007bff"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="35" fill="#ffffff"/>
+  
+  <!-- Body -->
+  <path d="M150,135 Q150,200 150,200 Q100,200 100,250 L200,250 Q200,200 150,200" fill="#007bff"/>
+  
+  <!-- Suit Details -->
+  <path d="M140,180 L160,180 L150,250 Z" fill="#0056b3"/>
+  
+  <!-- Tie -->
+  <path d="M145,160 L155,160 L150,200 Z" fill="#ffffff"/>
+  
+  <!-- Abstract Background Elements -->
+  <g fill="#007bff" opacity="0.1">
+    <circle cx="50" cy="50" r="20"/>
+    <circle cx="250" cy="250" r="25"/>
+    <rect x="230" y="40" width="30" height="30" transform="rotate(45,245,55)"/>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g stroke="#007bff" stroke-width="1" opacity="0.2">
+    <line x1="50" y1="50" x2="150" y2="120"/>
+    <line x1="250" y1="250" x2="150" y2="120"/>
+  </g>
+</svg>

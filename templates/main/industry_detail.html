@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ industry.name }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <!-- Industry Header -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}#industries">Industries</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ industry.name }}</li>
+                    </ol>
+                </nav>
+                <h1 class="display-4 fw-bold mb-4">{{ industry.name }}</h1>
+                <div class="mb-4">
+                    <i class="{{ industry.icon }} fa-3x text-primary"></i>
+                </div>
+                <p class="lead mb-4">{{ industry.description }}</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+            <div class="col-lg-6">
+                {% if industry.image %}
+                    <img src="{{ industry.image.url }}" alt="{{ industry.name }}" class="img-fluid rounded shadow-lg">
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Solutions Section -->
+        <div class="mb-5">
+            <h2 class="h2 fw-bold text-center mb-5">Our Solutions for {{ industry.name }}</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-cogs fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Process Automation</h3>
+                            <p>Streamline operations and improve efficiency with our advanced automation solutions.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Workflow optimization</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Resource management</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Quality control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-shield-alt fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Security Systems</h3>
+                            <p>Protect your assets with state-of-the-art security and surveillance solutions.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Access control</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Video surveillance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Threat detection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-chart-line fa-2x"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Analytics & Insights</h3>
+                            <p>Make data-driven decisions with our advanced analytics solutions.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Performance tracking</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Predictive analysis</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Custom reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Studies -->
+        <div class="bg-light p-5 rounded-3 mb-5">
+            <h2 class="h2 fw-bold text-center mb-5">Success Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3">Leading {{ industry.name }} Company</h3>
+                            <p class="mb-3">Implemented our comprehensive solution resulting in:</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-arrow-up text-success me-2"></i>30% increase in efficiency</li>
+                                <li class="mb-2"><i class="fas fa-arrow-down text-success me-2"></i>25% reduction in costs</li>
+                                <li><i class="fas fa-arrow-up text-success me-2"></i>40% improvement in security</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3">Global {{ industry.name }} Enterprise</h3>
+                            <p class="mb-3">Transformed operations with our technology solutions:</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-arrow-up text-success me-2"></i>50% faster processing time</li>
+                                <li class="mb-2"><i class="fas fa-arrow-up text-success me-2"></i>35% increase in productivity</li>
+                                <li><i class="fas fa-arrow-down text-success me-2"></i>20% reduction in errors</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <h2 class="h2 fw-bold mb-4">Transform Your {{ industry.name }} Business</h2>
+            <p class="lead mb-4">Partner with us to leverage cutting-edge technology solutions tailored for your industry.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+                <a href="#" class="btn btn-outline-primary btn-lg">Download Industry Report</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ service.title }}{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <!-- Service Header -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}#services">Services</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ service.title }}</li>
+                    </ol>
+                </nav>
+                <h1 class="display-4 fw-bold mb-4">{{ service.title }}</h1>
+                <div class="mb-4">
+                    <i class="{{ service.icon }} fa-3x text-primary"></i>
+                </div>
+                <p class="lead mb-4">{{ service.description }}</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+            <div class="col-lg-6">
+                {% if service.image %}
+                    <img src="{{ service.image.url }}" alt="{{ service.title }}" class="img-fluid rounded shadow-lg">
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Service Features -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-rocket fa-2x text-primary mb-3"></i>
+                        <h3 class="h5 mb-3">Advanced Technology</h3>
+                        <p class="mb-0">Utilizing cutting-edge technology to deliver superior results</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                        <h3 class="h5 mb-3">Secure & Reliable</h3>
+                        <p class="mb-0">Ensuring the highest levels of security and reliability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                        <h3 class="h5 mb-3">24/7 Support</h3>
+                        <p class="mb-0">Round-the-clock technical support and assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="bg-light p-5 rounded-3 mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="h2 fw-bold mb-4">Why Choose Our {{ service.title }}?</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Customized solutions tailored to your needs</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Experienced team of professionals</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Proven track record of success</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Cost-effective and efficient solutions</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Regular updates and maintenance</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/static/img/benefits.svg" alt="Benefits" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <h2 class="h2 fw-bold mb-4">Ready to Get Started?</h2>
+            <p class="lead mb-4">Contact us today to learn more about how our {{ service.title }} can benefit your business.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+                <a href="#" class="btn btn-outline-primary btn-lg">Download Brochure</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

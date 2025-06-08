@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8f9fa"/>
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="120" r="70" fill="#007bff"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="35" fill="#ffffff"/>
+  
+  <!-- Hair -->
+  <path d="M115,90 Q150,50 185,90" fill="#333333" stroke="none"/>
+  <path d="M115,85 Q150,120 185,85" fill="#333333" stroke="none"/>
+  <path d="M185,85 Q195,100 185,115" fill="#333333" stroke="none"/>
+  <path d="M115,85 Q105,100 115,115" fill="#333333" stroke="none"/>
+  
+  <!-- Body -->
+  <path d="M150,135 Q150,200 150,200 Q100,200 100,250 L200,250 Q200,200 150,200" fill="#007bff"/>
+  
+  <!-- Business Attire -->
+  <path d="M135,170 L165,170 L150,250 Z" fill="#0056b3"/>
+  <rect x="140" y="150" width="20" height="30" fill="#ffffff"/>
+  
+  <!-- Accessories -->
+  <path d="M135,145 Q150,155 165,145" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <circle cx="150" cy="155" r="2" fill="#ffffff"/>
+  
+  <!-- Abstract Background Elements -->
+  <g fill="#007bff" opacity="0.1">
+    <circle cx="80" cy="80" r="24"/>
+    <circle cx="220" cy="220" r="21"/>
+    <rect x="200" y="70" width="26" height="26" transform="rotate(15,213,83)"/>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g stroke="#007bff" stroke-width="1" opacity="0.2">
+    <line x1="80" y1="80" x2="150" y2="120"/>
+    <line x1="220" y1="220" x2="150" y2="120"/>
+  </g>
+  
+  <!-- Professional Icons -->
+  <g fill="#007bff" opacity="0.3">
+    <path d="M50,160 L70,160 L60,180 Z"/>
+    <path d="M230,140 Q240,150 230,160"/>
+    <circle cx="80" cy="240" r="3"/>
+    <circle cx="220" cy="60" r="3"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g stroke="#007bff" stroke-width="1" opacity="0.2">
+    <path d="M40,120 Q60,140 40,160" fill="none"/>
+    <path d="M260,120 Q240,140 260,160" fill="none"/>
+  </g>
+  
+  <!-- Management Symbols -->
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="130" cy="180" r="5"/>
+    <circle cx="170" cy="180" r="5"/>
+    <line x1="130" y1="180" x2="170" y2="180" stroke="#ffffff" stroke-width="1"/>
+  </g>
+</svg>

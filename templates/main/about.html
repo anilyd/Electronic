@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">About Transline Technologies</h1>
+                <p class="lead mb-4">We are a leading provider of cutting-edge technology solutions, specializing in biometrics, surveillance, and AI-driven innovations that transform businesses and enhance security.</p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+                    <a href="#services" class="btn btn-outline-primary">Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/static/img/about-hero.svg" alt="About Us" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-bullseye fa-3x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Our Mission</h3>
+                        <p>To empower organizations with innovative technology solutions that enhance security, efficiency, and growth while maintaining the highest standards of quality and customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Our Vision</h3>
+                        <p>To be the global leader in providing integrated technology solutions that shape the future of security and automation across industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Values -->
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Our Core Values</h2>
+            <p class="lead">The principles that guide everything we do</p>
+        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <i class="fas fa-innovation fa-2x text-primary mb-3"></i>
+                        <h4 class="h5">Innovation</h4>
+                        <p>Constantly pushing boundaries to create cutting-edge solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                        <h4 class="h5">Integrity</h4>
+                        <p>Maintaining highest standards of honesty and transparency</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                        <h4 class="h5">Collaboration</h4>
+                        <p>Working together to achieve exceptional results</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <i class="fas fa-star fa-2x text-primary mb-3"></i>
+                        <h4 class="h5">Excellence</h4>
+                        <p>Striving for perfection in everything we do</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="bg-light p-5 rounded-3 mb-5">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <h2 class="counter display-4 fw-bold" data-target="500">0</h2>
+                    <p class="text-muted">Clients Worldwide</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter display-4 fw-bold" data-target="50">0</h2>
+                    <p class="text-muted">Countries Served</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter display-4 fw-bold" data-target="1000">0</h2>
+                    <p class="text-muted">Projects Completed</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter display-4 fw-bold" data-target="200">0</h2>
+                    <p class="text-muted">Team Members</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Our Leadership Team</h2>
+            <p class="lead">Meet the experts behind our success</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="/static/img/team-1.svg" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="text-muted">CEO & Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="/static/img/team-2.svg" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="text-muted">CTO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="/static/img/team-3.svg" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mike Johnson</h5>
+                        <p class="text-muted">Head of Innovation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <img src="/static/img/team-4.svg" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sarah Williams</h5>
+                        <p class="text-muted">Head of Operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

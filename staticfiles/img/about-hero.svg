@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <rect width="40" height="40" fill="#f8f9fa"/>
+    <circle cx="20" cy="20" r="1" fill="#007bff" opacity="0.2"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)"/>
+
+  <!-- Team Illustration -->
+  <!-- Person 1 -->
+  <g transform="translate(200,250)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <circle cx="0" cy="-15" r="20" fill="#ffffff"/>
+    <path d="M-20,15 Q0,40 20,15" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- Person 2 -->
+  <g transform="translate(400,200)">
+    <circle cx="0" cy="0" r="40" fill="#0056b3"/>
+    <circle cx="0" cy="-15" r="20" fill="#ffffff"/>
+    <path d="M-20,15 Q0,40 20,15" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- Person 3 -->
+  <g transform="translate(600,300)">
+    <circle cx="0" cy="0" r="40" fill="#007bff"/>
+    <circle cx="0" cy="-15" r="20" fill="#ffffff"/>
+    <path d="M-20,15 Q0,40 20,15" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- Connecting Lines -->
+  <g stroke="#007bff" stroke-width="2">
+    <line x1="240" y1="250" x2="360" y2="200" opacity="0.5"/>
+    <line x1="440" y1="200" x2="560" y2="300" opacity="0.5"/>
+  </g>
+
+  <!-- Technology Icons -->
+  <g fill="#007bff" opacity="0.8">
+    <!-- Gear Icon -->
+    <path d="M150,400 L170,400 L175,420 L145,420 Z" />
+    <circle cx="160" cy="410" r="15"/>
+    
+    <!-- Chart Icon -->
+    <path d="M650,150 L670,150 L670,180 L650,180 Z" />
+    <path d="M680,160 L700,160 L700,180 L680,180 Z" />
+    <path d="M710,140 L730,140 L730,180 L710,180 Z" />
+  </g>
+
+  <!-- Abstract Shapes -->
+  <g fill="none" stroke="#007bff" stroke-width="2">
+    <circle cx="100" cy="100" r="30" opacity="0.2"/>
+    <circle cx="700" cy="500" r="40" opacity="0.2"/>
+    <rect x="150" y="500" width="40" height="40" opacity="0.2"/>
+    <rect x="650" y="50" width="30" height="30" transform="rotate(45,665,65)" opacity="0.2"/>
+  </g>
+
+  <!-- Floating Dots -->
+  <g fill="#007bff">
+    <circle cx="200" cy="150" r="5" opacity="0.5"/>
+    <circle cx="600" cy="400" r="5" opacity="0.5"/>
+    <circle cx="300" cy="450" r="5" opacity="0.5"/>
+    <circle cx="500" cy="100" r="5" opacity="0.5"/>
+  </g>
+</svg>
