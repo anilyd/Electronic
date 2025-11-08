@@ -1,6 +1,6 @@
 # Electronic show  Website
 
-A modern website for Transline Technologies built with Django, featuring services, industries, and contact management.
+A modern website for Electronic built with Django, featuring services, industries, and contact management.
 
 ## Features
 
