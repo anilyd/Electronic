@@ -1,4 +1,4 @@
-# Electronic show  Website
+# Electronic shop  Website
 
 A modern website for Electronic built with Django, featuring services, industries, and contact management.
 
