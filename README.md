@@ -1,4 +1,4 @@
-# Transline Technologies Website
+# Electronic show  Website
 
 A modern website for Transline Technologies built with Django, featuring services, industries, and contact management.
 
@@ -117,4 +117,7 @@ transline/
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
+
+## Contributing
+Anil kumar
 
